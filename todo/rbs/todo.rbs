@@ -1,0 +1,5 @@
+class Todo
+  def initialize: (untyped args) -> untyped
+
+  def finish: () -> untyped
+end

@@ -1,0 +1,11 @@
+# TypeProf 0.12.0
+
+# Classes
+class Todo
+  attr_reader title: untyped
+  attr_reader memo: untyped
+  attr_reader deadline: untyped
+  attr_reader status: String
+  def initialize: (untyped args) -> String
+  def finish: -> String
+end

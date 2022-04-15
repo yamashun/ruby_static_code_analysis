@@ -1,0 +1,23 @@
+# TypeProf 0.15.2
+
+# Classes
+class Todo
+  attr_reader title: untyped
+  attr_reader memo: untyped
+  attr_reader deadline: untyped
+  attr_reader status: String
+  def initialize: (untyped args) -> void
+  def finish: -> String
+end
+
+class TodoList
+  @todo_list: Array[Todo]
+
+  def initialize: -> void
+  def push: (Todo todo) -> Array[Todo]
+  def pop: -> Todo?
+  def finish: (Integer index) -> String
+  def before_list: -> Array[Todo]
+  def finished_list: -> Array[Todo]
+  def expired_list: -> Array[Todo]
+end
